@@ -1,0 +1,297 @@
+[
+  {
+    "id": "001",
+    "name": "Laundry",
+    "description": "What size do you need cleaned?",
+    "weights": [
+      {
+        "id": "001",
+        "quantity": "1-5 kgs",
+        "price": "250"
+      },
+      {
+        "id": "002",
+        "quantity": "6-10 kgs",
+        "price": "500"
+      },
+      {
+        "id": "003",
+        "quantity": "11-15 kgs",
+        "price": "700"
+      },
+      {
+        "id": "004",
+        "quantity": "16-20 kgs",
+        "price": "1000"
+      },
+      {
+        "id": "005",
+        "quantity": "21-30 kgs",
+        "price": "4000"
+      },
+      {
+        "id": "006",
+        "quantity": "31-50 kgs",
+        "price": "6000"
+      }
+    ]
+  },
+  {
+    "id": "002",
+    "name": "House Cleaning",
+    "description": "What size do you need cleaned?",
+    "weights": [
+      {
+        "id": "001",
+        "quantity": "1-2 rooms",
+        "price": "300"
+      },
+      {
+        "id": "002",
+        "quantity": "3-4 rooms",
+        "price": "650"
+      },
+      {
+        "id": "003",
+        "quantity": "5-6 rooms",
+        "price": "1500"
+      },
+      {
+        "id": "004",
+        "quantity": "6-20 rooms",
+        "price": "3000"
+      },
+      {
+        "id": "005",
+        "quantity": "21-1000 rooms",
+        "price": "2500"
+      }
+    ]
+  },
+  {
+    "id": "003",
+    "name": "Fumigation",
+    "description": "How large is the house you want fumigated?",
+    "weights": [
+      {
+        "id": "001",
+        "quantity": "1-2 rooms",
+        "price": "500"
+      },
+      {
+        "id": "002",
+        "quantity": "3-4 rooms",
+        "price": "1000"
+      },
+      {
+        "id": "003",
+        "quantity": "5-6 rooms",
+        "price": "2500"
+      },
+      {
+        "id": "004",
+        "quantity": "7-8 rooms",
+        "price": "3500"
+      },
+      {
+        "id": "005",
+        "quantity": "9-20 rooms",
+        "price": "4000"
+      },
+      {
+        "id": "006",
+        "quantity": "21-1000 rooms",
+        "price": "5000"
+      }
+    ]
+  },
+  {
+    "id": "004",
+    "name": "Electrical",
+    "description": "What do you need fixed",
+    "isGraduated": false,
+    "weights": [
+      {
+        "id": "001",
+        "quantity": "TV",
+        "price": "1000"
+      },
+      {
+        "id": "002",
+        "quantity": "Radio microwave",
+        "price": "500"
+      },
+      {
+        "id": "003",
+        "quantity": "Fridge",
+        "price": "1000"
+      },
+      {
+        "id": "004",
+        "quantity": "Dispenser",
+        "price": "500"
+      },
+      {
+        "id": "005",
+        "quantity": "Kettle",
+        "price": "300"
+      },
+      {
+        "id": "006",
+        "quantity": "Water Heater",
+        "price": "500"
+      },
+      {
+        "id": "007",
+        "quantity": "Lights",
+        "price": "500"
+      },
+      {
+        "id": "008",
+        "quantity": "Phone",
+        "price": "300"
+      },
+      {
+        "id": "009",
+        "quantity": "laptop",
+        "price": "500"
+      },
+      {
+        "id": "010",
+        "quantity": "CCTVs",
+        "price": "1000"
+      },
+      {
+        "id": "011",
+        "quantity": "Installations",
+        "price": "1500"
+      }
+    ]
+  },
+  {
+    "id": "005",
+    "name": "mechanics",
+    "description": "For How Long will you need a mechanic?",
+    "weights": [
+      {
+        "id": "001",
+        "quantity": "1 hour",
+        "price": "500"
+      },
+      {
+        "id": "002",
+        "quantity": "2 hour",
+        "price": "250"
+      },
+      {
+        "id": "003",
+        "quantity": "3 hour",
+        "price": "250"
+      }
+    ]
+  },
+  {
+    "id": "006",
+    "name": "Car Wash",
+    "description": "What category of washing do you want done to your vehicle?",
+    "isGraduated": false,
+    "weights": [
+      {
+        "id": "001",
+        "quantity": "Exterior Wash Suv",
+        "price": "300"
+      },
+      {
+        "id": "002",
+        "quantity": "Exterior Wash Saloon",
+        "price": "200"
+      },
+      {
+        "id": "003",
+        "quantity": "Exterior Wash Mini SUV",
+        "price": "250"
+      },
+      {
+        "id": "004",
+        "quantity": "Interior Wash Suv",
+        "price": "200"
+      },
+      {
+        "id": "005",
+        "quantity": "Interior Wash Saloon",
+        "price": "100"
+      },
+      {
+        "id": "006",
+        "quantity": "Interior Wash Mini SUV",
+        "price": "150"
+      },
+      {
+        "id": "007",
+        "quantity": "Exterior and Interior wash Suv",
+        "price": "500"
+      },
+      {
+        "id": "008",
+        "quantity": "Exterior and Interior wash Saloon",
+        "price": "300"
+      },
+      {
+        "id": "009",
+        "quantity": "Exterior and Interior wash Mini SUV",
+        "price": "400"
+      }
+    ]
+  },
+  {
+    "id": "007",
+    "name": "Photography",
+    "isGraduated": false,
+    "description": "Photography description...",
+    "weights": [
+      {
+        "id": "001",
+        "quantity": "1",
+        "price": "2000"
+      }
+    ]
+  },
+  {
+    "id": "001",
+    "name": "Salon & Barber",
+    "description": "salon&Barber description...",
+    "isGraduated": false,
+    "weights": [
+      {
+        "id": "001",
+        "quantity": "Braiding",
+        "price": "1000"
+      },
+      {
+        "id": "002",
+        "quantity": "Treatment",
+        "price": "500"
+      },
+      {
+        "id": "003",
+        "quantity": "Blow-dry",
+        "price": "200"
+      },
+      {
+        "id": "004",
+        "quantity": "Haircut",
+        "price": "500"
+      },
+      {
+        "id": "005",
+        "quantity": "Manicure",
+        "price": "500"
+      },
+      {
+        "id": "006",
+        "quantity": "Pedicure",
+        "price": "500"
+      }
+    ]
+  }
+]

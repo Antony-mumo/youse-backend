@@ -1,0 +1,42 @@
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://mysql-db:3306/yousebe?reconnect=true
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    show-sql: false
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        current_session_context_class: org.springframework.orm.hibernate5.SpringSessionContext
+app:
+  base_url: ${B2C_BASE_URL:http://localhost:9091/b2c-service}
+  base_api: ${app.base_url}
+  message: Message has been sent Successfully..
+
+mpesa:
+  override_pass_internal: true
+  allowed_ips: 127.0.0.1
+  apis:
+    daraj_base_api: ${mpesa.baseUrl}
+    client_credentials_url: ${mpesa.apis.daraj_base_api}/oauth/v1/generate?grant_type=client_credentials
+    stk_push_callback_url: ${app.base_api}/api/v1/payments/c2b/stk-push/result
+  baseUrl: ${MPESA_API_BASE_URI:https://sandbox.safaricom.co.ke}
+  client_credentials_url: ${mpesa.baseUrl}/oauth/v1/generate?grant_type=client_credentials
+  b2c_request_url: ${mpesa.baseUrl}/mpesa/b2c/v1/paymentrequest
+  b2b_request_url: ${mpesa.baseUrl}/mpesa/b2b/v1/paymentrequest
+  b2c_result_url: ${app.base_url}/api/v1/b2c/result
+  b2c_transaction_query_url: ${mpesa.baseUrl}/mpesa/transactionstatus/v1/query
+  b2c_transaction_query_result_url: ${app.base_url}/api/v1/b2c/query/result
+  app_IPAddress: "196.201.214.*,196.201.213.*,196.201.212.*"
+
+logging:
+  level:
+    root: info
+

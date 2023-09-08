@@ -1,0 +1,11 @@
+Account Type,Account No,SubAccount,Account Name,Description,Account Class,INCREASE,DECREASE,CATEGORIES
+ASSETS,2010,,PAYBILL ACCOUNT,Paybill balance available in account,Current asset,DEBIT,CREDIT,"DISBURSEMENT,COLLECTIONS"
+ASSETS,2011,,CASH  A/C,Cash in hand,Current asset,DEBIT,CREDIT,"DISBURSEMENT,COLLECTIONS"
+ASSETS,2020,,DEBTORS A/C,Cash expected to be paid by merchants,Current asset,DEBIT,CREDIT,
+INCOME,3010,,INTEREST INCOME A/C,Interest earned after service is completed and paid,Revenue,CREDIT,DEBIT,
+INCOME,3020,,SERVICE CHARGES RECOVERY A/C,Presta Service Charges Refunded By Customers,Other Income,CREDIT,DEBIT,
+EXPENSES,4010,,BAD DEBT A/C,Unrecoverable Loans Account (Bad Loans),Expense,DEBIT,CREDIT,
+EXPENSES,4020,,PAYMENT PROVIDER CHARGES A/C,"Mpesa Charges Expense (Paid By Youse, Refunded By Merchant)",Expense,DEBIT,CREDIT,
+LIABILITIES,5010,,DEFERRED INCOME A/C,"Interest charged, not yet earned ",Current Liability,CREDIT,DEBIT,
+LIABILITIES,5030,,UNPAID INTEREST,"Interest earned, but not yet paid to youse",Current Liability,CREDIT,DEBIT,
+LIABILITIES,5140,,SUSPENSE A/C,Suspense Account,Current Liability,CREDIT,DEBIT,

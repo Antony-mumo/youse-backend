@@ -1,0 +1,25 @@
+image: maven:3.6.1-jdk-11
+
+pipelines:
+  branches:
+    mainDEV:
+      - step:
+          name: Build & deploy dev
+          deployment: Dev
+          caches:
+            - maven
+          script:
+            - mvn clean install -Dmaven.test.skip=true
+            - scp target/yousebe.jar root@88.80.185.151:/root/yousebe/new_yousebe/yousebe/target/yousebe.jar
+            - ssh root@88.80.185.151 'cd /root/yousebe/new_yousebe/yousebe && docker build -t yousebe:latest . '
+            - ssh root@88.80.185.151 'cd /root/yousebe/new_yousebe/yousebe && sleep 15 && docker-compose up -d '
+
+    mainPROD:
+      - step:
+          name: Build & deploy prod
+          caches:
+            - maven
+          script:
+            - mvn package
+#            - scp target
+#            - ssh admin@ip_address 'sudo systemctl restart this.service'
